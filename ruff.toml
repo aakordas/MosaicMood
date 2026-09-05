@@ -1,0 +1,19 @@
+line-length = 80
+target-version = "py312"
+
+[lint]
+select = ["E", "W", "F", "N", "UP", "PL"]
+ignore = [
+    "E501",  # line-too-long (handled by line-length config)
+    "E402",  # module-import-not-at-top (acceptable for test mocking)
+    "PLC0415",  # import-not-at-top (acceptable for test mocking)
+    "PLR0912",  # too-many-branches
+    "PLR0913",  # too-many-arguments
+    "PLR0917",  # too-many-positional-arguments (video function has many params)
+    "PLR2004",  # magic-value (acceptable in tests)
+    "N802",  # invalid-function-name (mock method names can't be changed)
+]
+
+[lint.per-file-ignores]
+"__init__.py" = ["F401"]
+"tests/**" = ["PLR0913"]
