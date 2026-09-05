@@ -26,11 +26,13 @@ General form:
 
 ```sh
 python main.py INPUT_PATH [options]
+```
 
 Module entrypoint form:
 
 ```sh
 python -m mosaicmood INPUT_PATH [options]
+```
 
 ### Image Modes
 
