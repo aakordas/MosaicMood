@@ -1,0 +1,1 @@
+"""MosaicMood package entrypoint support."""

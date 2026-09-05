@@ -6,5 +6,6 @@ pytest
 pytest-cov
 ruff
 mypy
+tkinter
 types-tqdm
 types-opencv-python
